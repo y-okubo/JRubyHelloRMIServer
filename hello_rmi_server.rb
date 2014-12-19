@@ -13,8 +13,8 @@ java_import java.rmi.RMISecurityManager
 class HelloRMIServer
   include com::nekojarashi::Hello
   def sayHello()
-    # return "Hello, RMI World!"
-    java.lang.String.new("Hello, RMI World on JRuby!")
+    puts 'Called by client'
+    return 'Hello, RMI World on JRuby!'
   end
 end
 
